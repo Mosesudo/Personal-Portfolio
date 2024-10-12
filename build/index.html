@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-pt-24
+<html lang="en" class="scroll-smooth scroll-pt-20
 ">
 <head>
     <meta charset="UTF-8">
@@ -11,34 +11,46 @@
       theme: {
         extend: {
           colors: {
-            neutral: '#8bd3dd',
-            bg: '#001858',
-            bg2: '#a7a9be'
+            dark: '#08163b'
           }
         }
       }
     }
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="text-center "> 
+<body class="text-center"> 
     <header>
-    <nav id="navbar" class="m-1 flex items-center justify-center fixed mt-0 ml-0  w-full left-0 text-2xl z-50">
-      <ul id="nav-links" class="flex list-none ">
-        <li><a class="inline-block mx-2.5 my-5 px-10 py-2.5 relative after:content-[''] after:w-0 after:h-1.5 after:absolute after:left-9 after:-bottom-1.5 after:bg-slate-300 hover:after:w-1/2 hover:after:duration-500 hover:after:ease-linear font-black text-white hover:text-black hover:duration-1000" id="nav-link" href="#welcome-section">Home</a></li>
-        <li><a class="inline-block mx-2.5 my-5 px-10 py-2.5 relative after:content-[''] after:w-0 after:h-1.5 after:absolute after:left-9 after:-bottom-1.5 after:bg-slate-300 hover:after:w-1/2  hover:after:duration-500 hover:after:ease-linear font-black text-white hover:text-black hover:duration-1000" id="nav-link" href="#projects">About</a></li>
-        <li><a  class="inline-block mx-2.5 my-5 px-10 py-2.5 relative after:content-[''] after:w-0 after:h-1.5 after:absolute after:left-11 after:-bottom-1.5 after:bg-slate-300 hover:after:w-1/2  hover:after:duration-500 hover:after:ease-linear text-white hover:text-black hover:duration-1000 font-black" id="nav-link" href="#contact">Contact</a></li>
+    <nav id="navbar" class="bg-dark m-1  items-center justify-between flex fixed mt-0 ml-0  w-full left-0 top-0 text-2xl z-50 p-5">
+      <h1 class="text-white font-black text-3xl ml-4">Mk<span class="text-red-800">l</span>eo</h1>
+      
+      <ul id="nav-links" class="hidden lg:flex
+      lg:flex-row lg:justify-end lg:-top-12  absolute top-16 lg:space-y-0 space-y-8 py-10 lg:bg-transparent bg-dark  flex-col list-none">
+        <li><a class="lg:inline-block   mx-2.5 my-5 px-10 py-2.5 relative after:content-[''] after:w-0 after:h-1.5 after:absolute after:left-9 after:-bottom-1.5 after:bg-slate-300 hover:after:w-1/2 hover:after:duration-500 hover:after:ease-linear font-black text-white hover:text-slate-200 hover:duration-1000" id="nav-link" href="#welcome-section">Home</a></li>
+        <li><a class="lg:inline-block   mx-2.5 my-5 px-10 py-2.5 relative after:content-[''] after:w-0 after:h-1.5 after:absolute after:left-9 after:-bottom-1.5 after:bg-slate-300 hover:after:w-1/2  hover:after:duration-500 hover:after:ease-linear font-black text-white hover:text-slate-200 hover:duration-1000" id="nav-link" href="#projects">About</a></li>
+        <li><a  class="lg:inline-block   mx-2.5 my-5 px-10 py-2.5 relative after:content-[''] after:w-0 after:h-1.5 after:absolute after:left-11 after:-bottom-1.5 after:bg-slate-300 hover:after:w-1/2  hover:after:duration-500 hover:after:ease-linear text-white hover:text-slate-200 hover:duration-1000 font-black" id="nav-link" href="#contact">Contact</a></li>
         </ul>
         
+        <button  id="button"><i id="bars" class="fa-solid fa-bars mr-2 lg:hidden text-white"></i></button>
+      
+
     </nav>
     </header>
-    <section id="welcome-section" class="text-center pt-0.5 flex flex-col h-screen">
-      <h1 class="font-sans font-bold text-5xl mt-96"> Hey, I am MOSES</h1>
-      <p class="text-red-900 font-black  text-lg italic mx-6">a web developer</p>
+    <div class="h-screen lg:flex lg:flex-row lg:items-center ">
+    <img src="img/myphoto.jpg" alt="my photo" class="w-1/2 h-80 mx-auto bg-blue-600  mt-32 lg:rounded-full lg:w-auto"> 
+    
+   <section id="welcome-section" class="flex items-center  justify-center flex-col -mt-80 lg:mr-96">
+      <h1 class="font-sans  lg:font-light  lg:leading-20 m-auto  leading-none"> Hey, I am  MOSES</h1>
+      
+      <p class="text-red-900 font-black  text-lg italic">a web developer</p>
+    
       </section>
+    </div>
+    
       <section id="projects" class="bg-[url(./img/Dark.jpg)] bg-no-repeat bg-cover">
         
-        <h1 class="border-b-4 border-solid border-blue-900 m-auto w-fit text-2xl font-black text-white">These are some of my projects</h1>
+        <h2 class="border-b-4 border-solid border-blue-900 m-auto w-fit text-2xl font-black text-white">These are some of my projects</h2>
         <div class="xl:grid xl:grid-cols-3 sm:w-2/3 xl:h-1/2 xl:w-full md:grid-cols-2 grid gap-7 w-1/2 p-5 m-auto">
       <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-variables-by-building-a-city-skyline/step-118" target="_blank" class="h-full w-full flex flex-col items-center justify-center rounded-s-2xl shadow-xl shadow-black border-b-4 border-solid border-blue-800">
         <img class="m-auto w-full h-52 object-cover" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtu524uVYrY4lolnnjJhv8GRa2s2t3Q4JWtX27S19EghfPGq37" alt=""><p class="text-2xl text-red-700 font-black w-full rounded-2xl mb-4 opacity-0 hover:opacity-100 py-1 hover:text-black hover:duration-500 hover:ease-in"><span><</span>Sky line<span>/></span></p></a>
@@ -75,5 +87,6 @@
         </section>
         <footer class="text-3xl text-black border-t-4 border-solid border-red-900 p-8">Made by Mkleo</footer>
         <p class="mb-4 text-2xl italic text-black hover:text-red-600 hover:duration-700 hover:ease-in-out"> you can reach out to my <a href="https://www.facebook.com/profile.php?id=100088582219535&sk=following" id="profile-link" target="_blank" class="text-red-600">profile</a></p>
+        <script src="app.js"></script>
 </body>
 </html>
