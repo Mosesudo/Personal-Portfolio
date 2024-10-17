@@ -5,22 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script> 
-    <script>
-         tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            dark: '#08163b'
-          }
-        }
-      }
-    }
-    </script>
+     
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
 </head>
-<body class="text-center"> 
+<body id="body" class="text-center bg-white dark:bg-black"> 
     <header>
     <nav id="navbar" class="bg-dark m-1  items-center justify-between flex fixed mt-0 ml-0  w-full left-0 top-0 text-2xl z-50 p-5">
       <h1 class="text-white font-black text-3xl ml-4">Mk<span class="text-red-800">l</span>eo</h1>
@@ -37,20 +27,20 @@
 
     </nav>
     </header>
-    <div class="h-screen lg:flex lg:flex-row lg:items-center ">
-    <img src="img/myphoto.jpg" alt="my photo" class="w-1/2 h-80 mx-auto bg-blue-600  rounded-md mt-32 lg:rounded-full lg:w-auto"> 
+    <div class="h-screen  lg:flex lg:flex-row lg:items-center ">
+    <img src="img/myphoto.jpg" alt="my photo" class="w-1/2 h-80 mx-auto bg-blue-600  rounded-md mt-32 lg:rounded-full  lg:w-auto"> 
     
    <section id="welcome-section" class="flex items-center  justify-center flex-col -mt-80 lg:mr-96">
-      <h1 class="font-sans  lg:font-light  lg:leading-20 m-auto  leading-none"> Hey, I am  MOSES</h1>
+      <h1 class="font-sans  lg:font-light  lg:leading-20 m-auto dark:text-white leading-none"> Hey, I am  MOSES</h1>
       
       <p class="text-red-900 font-black  text-lg italic">a web developer</p>
     
       </section>
     </div>
     
-      <section id="projects" class="bg-gray-400">
+      <section id="projects" class="bg-gray-400 dark:bg-slate-600">
         
-        <h2 class="border-b-4 border-solid border-blue-900 m-auto w-fit text-2xl font-black text-white">These are some of my projects</h2>
+        <h2 class="border-b-4 border-solid border-blue-900 m-auto w-fit text-2xl font-black text-white ">These are some of my projects</h2>
         <div class="xl:grid xl:grid-cols-3 sm:w-2/3 xl:h-1/2 xl:w-full md:grid-cols-2 grid gap-7 w-1/2 p-5 m-auto">
       <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-variables-by-building-a-city-skyline/step-118" target="_blank" class="h-full w-full flex flex-col items-center justify-center rounded-s-2xl shadow-xl shadow-black border-b-4 border-solid border-blue-800">
         <img class="m-auto w-full h-52 object-cover" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtu524uVYrY4lolnnjJhv8GRa2s2t3Q4JWtX27S19EghfPGq37" alt=""><p class="text-2xl text-red-700 font-black w-full rounded-2xl mb-4 opacity-0 hover:opacity-100 py-1 hover:text-black hover:duration-500 hover:ease-in"><span><</span>Sky line<span>/></span></p></a>
@@ -69,24 +59,31 @@
         <button class="text-white outline-dotted outline-black bg-slate-600 text-2xl font-black m-auto mb-2 py-2 rounded-full px-2 relative"><a href="https://www.facebook.com/profile.php?id=100088582219535&sk=following" target="_blank" class="relative text-black hover:duration-1000 hover:ease-linear hover:text-white z-10">SHOW ALL</a> </button>    
         </section>
         <section id="contact" class="text-white ">
-          <h1 class="mt-72 text-black text-5xl">Let Us Work Together...</h1>
-          <p class="italic text-black text-xl">how do you take your coffee?</p>
+          <h1 class="mt-72 text-black text-5xl dark:text-white">Let Us Work Together...</h1>
+          <p class="italic text-black text-xl dark:text-white">how do you take your coffee?</p>
           <div class=" sm:flex sm:flex-row flex flex-col max-w-5xl justify-around m-auto mt-8">
             <a href="https://www.facebook.com/profile.php?id=61563542187817" target="_blank" class="hover:-translate-y-5 duration-500 ease-in"><img class="w-16 m-auto "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREhIStQW6CVwkxfySAEk7m-ixijfzEEnZs-w&s">
-            <p class="font-bold text-red-900">Facebook</p></a>
-            <a href="https://www.freecodecamp.org/mkleo" target="_blank" class="hover:-translate-y-5 duration-500 ease-in"><img class="w-16 m-auto rounded-xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFexvQoQiJUmiCU1BPhYEaj2JTwB04guchAw&s"> <p class="font-bold text-red-900">FreeCodeCamp</p></a>
-            <a href="https://x.com/Mkleo5211" target="_blank" class="hover:-translate-y-5 duration-500 ease-in"><img class="w-16 m-auto rounded-xl" src="https://cdn-icons-png.flaticon.com/512/124/124021.png"><p class="font-bold text-red-900">Twitter</p></a>
+            <p class="font-bold text-red-900 dark:text-white">Facebook</p></a>
+            <a href="https://www.freecodecamp.org/mkleo" target="_blank" class="hover:-translate-y-5 duration-500 ease-in"><img class="w-16 m-auto rounded-xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFexvQoQiJUmiCU1BPhYEaj2JTwB04guchAw&s"> <p class="font-bold text-red-900 dark:text-white">FreeCodeCamp</p></a>
+            <a href="https://x.com/Mkleo5211" target="_blank" class="hover:-translate-y-5 duration-500 ease-in"><img class="w-16 m-auto rounded-xl" src="https://cdn-icons-png.flaticon.com/512/124/124021.png"><p class="font-bold text-red-900 dark:text-white">Twitter</p></a>
               
             <a href="https://github.com/Mosesudo" target="_blank" class="hover:-translate-y-5 duration-500 ease-in"><img class="w-16 m-auto rounded-xl"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmIH1ScG7IUPXxu1rgzTJdgkrgBiN32iA0Tw&s">
-                <p class="font-bold text-red-900">Github</p></a>
+                <p class="font-bold text-red-900 dark:text-white">Github</p></a>
 
                 <a href="https://www.linkedin.com/in/mkleo-udo-91850b306/" target="_blank" class="hover:-translate-y-5 duration-500 ease-in"><img class="w-16 h-16 m-auto rounded-xl"  src="https://blog.boon.so/wp-content/uploads/2024/03/LinkedIn-Logo-2-scaled.jpg">
-                    <p class="font-bold text-red-900">LinkedIn</p></a>
+                    <p class="font-bold text-red-900 dark:text-white">LinkedIn</p></a>
 
           </div>
         </section>
-        <footer class="text-3xl text-black border-t-4 border-solid border-red-900 p-8">Made by Mkleo</footer>
-        <p class="mb-4 text-2xl italic text-black hover:text-red-600 hover:duration-700 hover:ease-in-out"> you can reach out to my <a href="https://www.facebook.com/profile.php?id=100088582219535&sk=following" id="profile-link" target="_blank" class="text-red-600">profile</a></p>
+        <footer class="text-3xl text-black border-t-4 border-solid border-red-900 p-8 dark:text-white">Made by Mkleo</footer>
+        <section>
+          <div id="text" class="dark:text-white">Dark Mode</div>
+        <div id="container" class="h-5 relative  rounded-full w-10 m-auto bg-red-500">
+          <div id="ball" class="w-5 rounded-full  absolute  bg-black h-5"></div>
+        </div>
+        
+      </section>
+        <p class="mb-4 text-2xl italic text-black hover:text-red-600 hover:duration-700 hover:ease-in-out dark:text-white"> you can reach out to my <a href="https://www.facebook.com/profile.php?id=100088582219535&sk=following" id="profile-link" target="_blank" class="text-red-600">profile</a></p>
         <script src="app.js"></script>
 </body>
 </html>
